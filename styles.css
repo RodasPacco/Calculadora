@@ -1,0 +1,71 @@
+input:focus-visible {
+  outline: -webkit-focus-ring-color auto 0px;
+}
+
+input {
+  padding: 10px;
+  width: 100%;
+  text-align: right;
+}
+
+button {
+  width: 100%;
+}
+
+.row button,.row div {
+  background: white;
+  border-radius: 6px;
+  border: none;
+}
+
+.row button {
+  padding: 10px;
+  box-shadow: 0px 0px 1px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+  height: 100%;
+  min-height: 90px;
+}
+
+.row div {
+  padding: 2px;
+}
+
+.row div:nth-last-child(1) button {
+  background: #eaeaea40;
+}
+.operators button{
+  background: #eaeaea40;
+}
+.row:nth-last-child(1) div:nth-last-child(1) button {
+  background: #447ebb;
+  color: white;
+}
+
+@media screen and (max-width: 767px) {
+  /* Styles for small devices */
+  .row.fs-2 {
+    font-size: calc(1.3rem + 0.6vw) !important;
+  }
+  button.fs-4 {
+    font-size: 1.25rem !important;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  /* Styles for medium devices */
+  .row.fs-2 {
+    font-size: calc(1.325rem + 0.9vw) !important;
+  }
+  button.fs-4 {
+    font-size: calc(1.275rem + 0.3vw) !important;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  /* Styles for large devices */
+  .row.fs-2 {
+    font-size: calc(1.375rem + 1.5vw) !important;
+  }
+  button.fs-4 {
+    font-size: calc(1.3rem + 0.6vw) !important;
+  }
+}
